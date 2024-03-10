@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./GlobalStyles.js";
+import { linkedInIcon } from "./Constants";
+import Footer from "./pages/Footer";
+import Contact from "./pages/Contact";
+import Project from "./pages/Project";
+import About from "./pages/About";
+import Hero from "./pages/Hero.js";
+import Header from "./pages/Header.js";
+import GlobalStyles from "./GlobalStyles.js";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyles />
+      <Header></Header>
+      <Hero></Hero>
+      <About></About>
+      <Project></Project>
+      <Contact></Contact>
+      <Footer></Footer>
+    </>
   );
 }
 
