@@ -4,6 +4,9 @@ export const Container = styled.div`
   margin: 0 auto;
   max-width: 107rem;
   padding: 0 4rem;
+  @media only screen and (max-width: 460px) {
+    padding: 0 1.7rem;
+  }
 `;
 const GlobalStyles = createGlobalStyle`
 & *{
@@ -18,7 +21,14 @@ const GlobalStyles = createGlobalStyle`
     background-color: #fff;
     font-family: Poppins,sans-serif;
     position: relative;
+    min-width: fit-content;
+  min-height: fit-content;
 }
+
+& html{
+  font-size: 72.5%;
+}
+
 
 `;
 export default GlobalStyles;

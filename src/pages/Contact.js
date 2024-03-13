@@ -11,6 +11,9 @@ import { Container } from "../GlobalStyles";
 const StyledContact = styled.section`
   background-color: #fff;
   padding: 11rem 0;
+  @media only screen and (max-width: 410px) {
+    padding: 8rem 0;
+  }
 `;
 
 const ContactTitle = styled.div`
@@ -32,6 +35,13 @@ const ContactLink = styled.div`
   flex-wrap: wrap;
   gap: 8rem;
   margin-top: 6rem;
+  @media only screen and (max-width: 410px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    margin-top: 4rem;
+  }
 `;
 
 const ContactLinkBox = styled.div`
@@ -49,6 +59,9 @@ const ContactLinkBox = styled.div`
     height: 5rem;
     justify-content: center;
     width: 5rem;
+  }
+  @media only screen and (max-width: 410px) {
+    flex-direction: column;
   }
 `;
 
@@ -72,6 +85,10 @@ const ContactLinkInfo = styled.div`
 const ContactContent = styled.div`
   display: flex;
   flex-direction: column;
+  @media only screen and (max-width: 410px) {
+    align-items: center;
+    text-align: center;
+  }
 `;
 export default function Contact() {
   return (

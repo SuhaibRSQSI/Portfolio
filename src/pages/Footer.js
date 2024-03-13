@@ -11,6 +11,13 @@ const StyledFooter = styled.footer`
   & div {
     display: flex;
     justify-content: space-between;
+    @media only screen and (max-width: 410px) {
+      display: flex;
+
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
   }
 `;
 const Icon = styled.div`
@@ -19,6 +26,12 @@ const Icon = styled.div`
   gap: 2rem;
   justify-content: center;
   margin-top: 1rem;
+  &&& {
+    @media only screen and (max-width: 410px) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
 `;
 const FooterText = styled.h3`
   color: #fff;

@@ -11,7 +11,7 @@ const StyledHeader = styled.nav`
   height: auto;
   justify-content: space-between;
   left: 0;
-  padding: 25px 40px 25px 50px;
+  padding: 32px 40px 32px 50px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -20,7 +20,7 @@ const StyledHeader = styled.nav`
   & .logo {
     color: #2d2e32;
     cursor: pointer;
-  }
+      }
   & ul {
     display: flex;
     gap: 2rem;

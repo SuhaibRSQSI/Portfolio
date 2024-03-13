@@ -8,12 +8,19 @@ import { Container } from "../GlobalStyles";
 const StyledAbout = styled.section`
   background-color: #fff;
   padding: 15rem 0;
+  @media only screen and (max-width: 1020px) {
+    padding: 8rem 0;
+  }
 `;
 const AboutContent = styled.div`
   align-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
+  @media only screen and (max-width: 1020px) {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
 `;
 
 const rotate = keyframes`
@@ -27,11 +34,23 @@ const ImageSide = styled.div`
   position: relative;
 
   & .work_img {
-    bottom: 72px;
+    bottom: 4rem;
     position: absolute;
-    right: 133px;
+    right: 9.3rem;
     width: 6rem !important;
     z-index: 10;
+    @media only screen and (max-width: 750px) {
+      display: none;
+    }
+
+    @media only screen and (max-width: 880px) {
+      bottom: 57px;
+      right: 156px;
+    }
+    @media only screen and (max-width: 1020px) {
+      bottom: 25px;
+      right: 245px;
+    }
   }
   & .img_side {
     border-radius: 1.7rem;
@@ -46,11 +65,31 @@ const ImageSide = styled.div`
     position: absolute;
     right: 33px;
     width: 19rem;
+    @media (max-width: 750px) {
+      display: none;
+    }
+    @media (max-width: 880px) {
+      bottom: -3px;
+      right: 100px;
+    }
+    @media (max-width: 1020px) {
+      bottom: -3px;
+      height: 17rem;
+      right: 190px;
+      width: 17rem;
+    }
   }
   & span img {
     -webkit-animation: rotate 9s linear infinite;
     animation: ${rotate} 9s linear infinite;
     width: 19rem;
+  }
+  @media only screen and (max-width: 460px) {
+    height: auto;
+    width: 90%;
+  }
+  @media only screen and (max-width: 1020px) {
+    margin-bottom: 3.5rem;
   }
 `;
 
@@ -75,10 +114,15 @@ const TextSide = styled.div`
 
   & p {
     color: #767676;
-    font-family: Mulish, sans-serif;
-    font-size: 1.7rem;
+    /* font-family: Mulish, sans-serif; */
+    font-size: 2rem;
     font-weight: 500;
     line-height: 1.5;
+  }
+
+  @media only screen and (max-width: 1020px) {
+    margin: 0 auto;
+    max-width: 54rem;
   }
 `;
 
